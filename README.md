@@ -8,8 +8,10 @@ One set of workbooks describes entities. Another set describes only Entities wit
 Some filters do not work due to incompatibilities with Tableau and Phoenix.
 ie. I tried to make a Average Duration of Entity by Country workbook but had to exclude it from the packaged workbook.
 
-# Entities (Offshore Companies) with Known Beneficiaries
+[Definition of terms] (https://offshoreleaks.icij.org/pages/about).
 
+# Entities (Offshore Companies) with Known Beneficiaries
+```
 SELECT BNAME, BCOUNTRIES, NAME, COUNTRIES, INCORPORATION_DATE, INACTIVATION_DATE, STRUCK_OFF_DATE, DORM_DATE, STATUS, SERVICE_PROVIDER, SOURCEID
 FROM
 	(
@@ -25,5 +27,4 @@ FROM
 	) intermediaries
 INNER JOIN ENTITIES
 ON ENTITIES.NODE_ID = intermediaries.NODE_2
-
-[Definition of terms] (https://offshoreleaks.icij.org/pages/about).
+```
