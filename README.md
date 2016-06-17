@@ -11,7 +11,7 @@ docker build -t kliew/phoenix-panamapapers .
 ```
 
 # Tableau Workbooks
-Workbooks can be viewed and edited (while connected to a valid datasource) using [Tableau Desktop 9.3] (http://www.tableau.com/products/reader).
+Workbooks can be viewed and edited (while connected to a valid datasource using Simba's Phoenix ODBC driver) using [Tableau Desktop 9.3] (http://www.tableau.com/products/reader).
 Packaged workbooks (twbx) can be viewed for free using [Tableau Reader 9.3] (http://www.tableau.com/products/reader). The data was extracted from Phoenix and packaged with the workbook.
 
 One set of workbooks describes entities. Another set describes only Entities with Known Beneficiaries.
