@@ -1,3 +1,14 @@
+# Launch Docker Container
+```
+docker pull kliew/phoenix-panamapapers
+docker run -it -p 8765:8765 --rm kliew/phoenix-panamapapers
+```
+
+# Build Docker Image
+Or to build the image yourself
+```
+docker build -t kliew/phoenix-panamapapers .
+```
 
 # Tableau Workbooks
 Workbooks can be viewed and edited (while connected to a valid datasource) using [Tableau Desktop 9.3] (http://www.tableau.com/products/reader).
