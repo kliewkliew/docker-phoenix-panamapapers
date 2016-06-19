@@ -35,7 +35,7 @@ FROM
 		WHERE REL_TYPE = 'beneficiary of'
 		) bEdges
 	ON NODE_ID = bEdges.NODE_1
-	) intermediaries
+	) beneficiaries
 INNER JOIN ENTITIES
-ON ENTITIES.NODE_ID = intermediaries.NODE_2
+ON ENTITIES.NODE_ID = beneficiaries.NODE_2
 ```
